@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1{
+    color: #754a1c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ 
+  body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "footer footer footer";
+  }
+  
+  nav, header, main, aside, footer{
+    padding: 20px;
+  }
+  
+  header{
+    grid-area: header;
+    color: #343a40;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 1.5rem;
+  }
+  
+  nav{
+    grid-area: nav;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    width: 15rem;    
+  }
+  
+  nav ul{
+    list-style: none;
+  }
+  
+  nav li{
+    margin-bottom: 10px;    
+  }
+  
+  nav a.nav-link{
+    text-decoration: none;
+    color: #535749;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out !important;
+    color: 1s ease-in-out !important;
+  }
+  
+  nav a.nav-link:hover{
+    color: #ffffff !important;
+    background-color: #D98324 !important; /*Color del menú*/
+  }
+  nav a.nav-link{
+    color: #754a1c !important;
+    font-weight: bold;
+  }
+  main{
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  article{
+    margin-bottom: 50px;
+  }
+  
+  article h2{
+    color: #9b6327; /*Bienvenido*/
+    margin-bottom: 20px;
+  }
+  
+  article p{
+    color: #495057;
+  }
+  
+  article a{
+    color: #63390d; /*Leer mas*/
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  article a:hover{
+    color: #D98324; /*Leer mas*/
+  }
+  
+  aside{
+    grid-area: sidebar;
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    padding: 20px;
+  }
+  
+  aside h3{
+    color: #9b6327;
+    margin-bottom: 20px;
+  }
+  
+  aside ul{
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside li{
+    margin-bottom: 20px;
+  }
+  
+  aside a{
+    color: #68380b;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  aside a:hover{
+    color: #c76408;
+  }
+  
+  footer{
+    grid-area: footer;
+    background-color: #D98324;
+    color: #fff;
+    text-align: center;
+  }
+
+  @media (width <= 550px) {
+    body{
+        background: #ebe9e7;        
+    }
+ 
+    footer{     
+      display: none;
+    }
+  }
+
+  .center{    
+    padding-top: 20px;  
+    width: 100%;
+    height: 100%;
+  }
